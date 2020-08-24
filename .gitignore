@@ -1,0 +1,4 @@
+# Ecludde node modules
+/node_modules
+
+/final

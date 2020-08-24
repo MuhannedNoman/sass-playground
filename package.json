@@ -1,0 +1,10 @@
+{
+  "name": "sass-playground",
+  "version": "1.0.0",
+  "description": "Testing Sass",
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.26.10"
+  }
+}
