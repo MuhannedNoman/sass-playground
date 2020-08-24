@@ -21,3 +21,11 @@
     margin-bottom: 30px;
   }
 }
+
+@mixin clear-fix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
