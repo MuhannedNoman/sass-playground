@@ -1,9 +1,34 @@
-// Variables
-
+// Colors
 $deep-blue: #032f3e;
 $off-white: #f8f9fb;
-
+// Font size
 $section-heading: 24px;
+$banner-heading: 46px;
+
+// Mixins
+@mixin banner {
+  width: 100%;
+  position: relative;
+  color: white;
+  .banner-content {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+  span {
+    font-size: $banner-heading;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  span .title {
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
+}
 
 #main-nav {
   background: $deep-blue;
@@ -33,4 +58,19 @@ $section-heading: 24px;
 section h1 {
   font-size: $section-heading;
   color: $deep-blue;
+}
+
+.lead-banner {
+  @include banner;
+  text-align: right;
+}
+
+.lessons-banner {
+  @include banner;
+  li {
+    text-transform: uppercase;
+    font-size: 20px;
+    max-width: 500px;
+    margin: 30px 0;
+  }
 }
